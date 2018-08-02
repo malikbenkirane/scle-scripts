@@ -1,4 +1,5 @@
-SCRIPTS		=	scls.sh
+SCRIPTS		=	scls.sh \
+				mc.sh
 
 SCRIPTS_DIR	=	./scripts
 INSTALL_DIR =	~/.local/bin
