@@ -15,7 +15,9 @@ _How Too Use It ?_
 
 # Rocking programs
 
-- `screen - screen manager with VT100/ANSI terminal emulation`
+- `screen - screen manager with VT100/ANSI terminal emulation`;
+- `fzf - a command-line fuzzy finder` and alternatively,
+- `fzy - a fuzzy text selector menu for the terminal`
 
 # Miscellenaous programs
 
@@ -25,3 +27,5 @@ _How Too Use It ?_
 
 - `scls.sh -  screen clear; screen list`
 - `mc.sh - wrapper to use mcee`
+- `fc.sh - fc-list fonts family names`
+- `path.sh - list POSIX path`
