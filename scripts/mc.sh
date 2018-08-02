@@ -10,6 +10,7 @@ mc="$MC_PYTHON $MC_SCLI"
 if test "$#" -lt 1
 then
 	eval $mc | less
+	exit 0
 fi
 
 # otherwise, lauch mcee and pass all args
