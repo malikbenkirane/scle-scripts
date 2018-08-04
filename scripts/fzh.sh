@@ -2,4 +2,4 @@
 # fzh.sh - fuzzy history
 #!/bin/bash -e
 
-eval "$(history | fzy | sed 's/\s*[0-9]\+\s*//; s/\"/\\\"/g')"
+fc -s $(history | fzy | awk '{print $1}')
