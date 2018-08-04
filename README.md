@@ -1,23 +1,28 @@
 # SCLE: sensible command line environment
 
-For the sensitive people. By sensitive individuals.
+For the real people and by sensible individuals.
 
-I will propose a set from at most only NIX/GNU-friendly programs and at most
-only POSIX shell scripts to interact well with.  But still, it is good to read
-their manuals (GNU's are astonishing) and to learn above your sensibility.
+I propose a set from at most only NIX/GNU-friendly programs and at most only
+POSIX shell scripts to interact well with the non bloating tools you could have
+on your system.   It still is good to read the manuals (GNU's documentation is
+astonishing).  Give it some time to reach knowledge above your sensibility).
 
-# HTYI
+# How ?
 
-_How Too Use It ?_
+`make` would copy all the scripts listed in the Makefile's `SCRIPTS` variable
+in `$HOME/.local/bin` and rename them so they don't have the `.sh` suffix
+anymore.
 
-1. I add `./scls/scripts` to my shell's PATH environement variable
-2. if a script does'nt have execution permission I read `./scls/configure`
+Therefore if `$HOME/.local/bin` is in the `PATH` in your environement
+you could run any of the sensible scripts documented below
+(see [Sensible Scripts](#Sensible_Scripts)).
 
 # Rocking programs
 
-- `screen - screen manager with VT100/ANSI terminal emulation`;
+- `screen - screen manager with VT100/ANSI terminal emulation` ;
 - `fzf - a command-line fuzzy finder` and alternatively,
-- `fzy - a fuzzy text selector menu for the terminal`
+- `fzy - a fuzzy text selector menu for the terminal` ;
+- `bash - GNU Bourne-Again SHell`
 
 # Miscellenaous programs
 
@@ -25,7 +30,10 @@ _How Too Use It ?_
 
 # Sensible Scripts
 
-- `scls.sh -  screen clear; screen list`
-- `mc.sh - wrapper to use mcee`
-- `fc.sh - fc-list fonts family names`
-- `path.sh - list POSIX path`
+- `scls -  screen clear; screen list`
+- `mc - wrapper above mcee`, [about mcee][1]
+- `fzfc - fc-list fonts family names fuzzy search`
+- `path - list what is available in PATH`
+- `fzh - bash history fuzzy search`
+
+[1]: https://github.com/malikbenkirane/mcee.git
