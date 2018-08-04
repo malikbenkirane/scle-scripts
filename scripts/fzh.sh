@@ -2,4 +2,11 @@
 # fzh.sh - fuzzy history
 #!/bin/bash -e
 
-fc -s $(history | fzy | awk '{print $1}')
+COMMAND=$(history | sort -r | fzy | awk '{print $1}')
+
+if test -n "$COMMAND"
+then
+	fc -s $COMMAND
+else
+	echo 'Aborted ...'
+fi
