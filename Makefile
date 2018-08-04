@@ -15,27 +15,26 @@ EXECS			=	$(addprefix $(SCRIPTS_DIR)/, $(ASCRIPTS))
 
 default:			install_ascripts
 
-install_ascripts:	uninstall copy
+install_ascripts: uninstall copy
 
-install_sscripts:	uninstall copy_sources
+install_sscripts: uninstall copy_sources
 
-copy_sources:		$(SOURCES)
-
-					test -d $(INSTALL_DIR) \
-						|| mkdir -p $(INSTALL_DIR)
-					cp $^ $(INSTALL_DIR)
+copy_sources: $(SOURCES)
+	test -d $(INSTALL_DIR) \
+		|| mkdir -p $(INSTALL_DIR)
+	cp $^ $(INSTALL_DIR)
 
 uninstall:
+	rm -f $(TARGETS) $(EXEC_TARGETS)
 
-					rm -f $(TARGETS) $(EXEC_TARGETS)
-
-copy:				$(EXECS)
-
-					test -d $(INSTALL_DIR) \
-						|| mkdir -p $(INSTALL_DIR)
-					cp $^ $(INSTALL_DIR)
+copy: $(EXECS)
+	test -d $(INSTALL_DIR) \
+		|| mkdir -p $(INSTALL_DIR)
+	cp $^ $(INSTALL_DIR)
 
 %: 					%.sh
+	cp $< $@ && \
+		chmod 755 $@
 
-					cp $< $@ && \
-						chmod 755 $@
+configure: $(SOURCES)
+	chmod 755 $^
