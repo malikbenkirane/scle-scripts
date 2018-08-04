@@ -1,5 +1,6 @@
 #!/bin/sh -e
 
+export LESS="--chop-long-lines --ignore-case"
 PREFIX=~/recess/devel/mcee
 
 MC_PYTHON=$PREFIX/venv/bin/python
