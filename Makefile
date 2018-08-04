@@ -1,8 +1,9 @@
-SCRIPTS			=	scls.sh \
-					mc.sh \
-					fc.sh \
-					path.sh
-
+SCRIPTS			=	fzfc.sh		\
+                    fzh.sh		\
+					mc.sh		\
+					path.sh 	\
+					scls.sh
+					
 ASCRIPTS		=	$(SCRIPTS:.sh=)
 SCRIPTS_DIR		=	./scripts
 INSTALL_DIR		=	~/.local/bin
@@ -20,21 +21,21 @@ install_sscripts:	uninstall copy_sources
 
 copy_sources:		$(SOURCES)
 
-	test -d $(INSTALL_DIR) \
-		|| mkdir -p $(INSTALL_DIR)
-	cp $^ $(INSTALL_DIR)
+					test -d $(INSTALL_DIR) \
+						|| mkdir -p $(INSTALL_DIR)
+					cp $^ $(INSTALL_DIR)
 
 uninstall:
 
-	rm -f $(TARGETS) $(EXEC_TARGETS)
+					rm -f $(TARGETS) $(EXEC_TARGETS)
 
 copy:				$(EXECS)
 
-	test -d $(INSTALL_DIR) \
-		|| mkdir -p $(INSTALL_DIR)
-	cp $^ $(INSTALL_DIR)
+					test -d $(INSTALL_DIR) \
+						|| mkdir -p $(INSTALL_DIR)
+					cp $^ $(INSTALL_DIR)
 
 %: 					%.sh
 
-	cp $< $@ && \
-		chmod 755 $@
+					cp $< $@ && \
+						chmod 755 $@
