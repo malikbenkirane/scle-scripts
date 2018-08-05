@@ -28,6 +28,10 @@ you could run any of the sensible scripts documented below
 
 - `mcee - task master for work ceremonies`
 
+# Rocking projects
+
+- [gruvbox][2] and [gruvbox-contrib][3]
+
 # Sensible Scripts
 
 - `scls -  screen clear; screen list`
@@ -35,5 +39,8 @@ you could run any of the sensible scripts documented below
 - `fzfc - fc-list fonts family names fuzzy search`
 - `path - list what is available in PATH`
 - `fzh - bash history fuzzy search`
+- `b16 - base16 list colorschemes`
 
 [1]: https://github.com/malikbenkirane/mcee.git
+[2]: https://github.com/morhetz/gruvbox
+[3]: https://github.com/morhetz/gruvbox-contrib
