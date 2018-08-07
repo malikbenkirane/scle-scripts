@@ -26,7 +26,7 @@ you could run any of the sensible scripts documented below
 
 # Miscellenaous programs
 
-- `mcee - task master for work ceremonies`
+- `mcee - task master for work ceremonies`, [about mcee][1]
 
 # Rocking projects
 
