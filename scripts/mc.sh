@@ -1,3 +1,5 @@
+# requires: sh, mcee (requires: python3), less
+# about mcee: https://github.com/malikbenkirane/mcee.git
 #!/bin/sh -e
 
 export LESS="--chop-long-lines --ignore-case"
@@ -15,4 +17,5 @@ then
 fi
 
 # otherwise, lauch mcee and pass all args
-eval $mc  $@
+cmd="$mc  '$@'"
+echo $cmd | sh
