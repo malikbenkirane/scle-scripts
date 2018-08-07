@@ -2,7 +2,8 @@ SCRIPTS			=	fzfc.sh		\
                     fzh.sh		\
 					mc.sh		\
 					path.sh 	\
-					scls.sh
+					scls.sh		\
+					b16.sh
 					
 ASCRIPTS		=	$(SCRIPTS:.sh=)
 SCRIPTS_DIR		=	./scripts
