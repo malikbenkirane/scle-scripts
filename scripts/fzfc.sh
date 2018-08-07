@@ -1,4 +1,4 @@
-# path requirements: fzf
+# requires: fzf
 #!/bin/sh -e
 
-fc-list : family | sort -u | fzf
+fc-list : family | sort -u | fzy -l 40
