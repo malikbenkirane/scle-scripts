@@ -78,5 +78,5 @@ sed -i "${filter}s/\(foreground:\s\+'\).*/\1${fg_color}'/" $ALACRITTY_CONFIG
 
 message="# ${COLORSCHEME} (colorscheme applied with scle/scripts/alacolors.sh)"
 
-sed -i "${filter}s/^colors:/colors: ${message//\//\\\/}/" $ALACRITTY_CONFIG
+sed -i "${filter}s/^colors:.*/colors: ${message//\//\\\/}/" $ALACRITTY_CONFIG
 echo $message
