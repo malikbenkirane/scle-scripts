@@ -3,4 +3,4 @@
 
 setxkbmap -option
 setxkbmap -option ctrl:nocaps
-xcape -e 'Control_L=Escape' -t 100
+xcape -e 'Control_L=Escape' -t 200
