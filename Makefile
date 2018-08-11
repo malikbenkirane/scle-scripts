@@ -1,25 +1,34 @@
-SCRIPTS			=	fzfc.sh		\
-                    fzh.sh		\
-					mc.sh		\
-					path.sh 	\
-					scls.sh		\
-					b16.sh
-					
-ASCRIPTS		=	$(SCRIPTS:.sh=)
-SCRIPTS_DIR		=	./scripts
-INSTALL_DIR		=	~/.local/bin
+SCRIPTS         =   fzfc.sh     \
+                    fzh.sh      \
+                    mc.sh       \
+                    path.sh     \
+                    scls.sh     \
+                    b16.sh      \
+                    kbconf.sh	\
+					alacolors
 
-SOURCES			=	$(addprefix $(SCRIPTS_DIR)/, $(SCRIPTS))
-TARGETS			=	$(addprefix $(INSTALL_DIR)/, $(SCRIPTS))
-EXEC_TARGETS	=	$(addprefix $(INSTALL_DIR)/, $(ASCRIPTS))
-EXECS			=	$(addprefix $(SCRIPTS_DIR)/, $(ASCRIPTS))
 
-default:			install_ascripts
+ASCRIPTS        =   $(SCRIPTS:.sh=)
+SCRIPTS_DIR     =   ./scripts
+INSTALL_DIR     =   ~/.local/bin
 
-install_ascripts: uninstall copy
+SOURCES         =   $(addprefix $(SCRIPTS_DIR)/, $(SCRIPTS))
+TARGETS         =   $(addprefix $(INSTALL_DIR)/, $(SCRIPTS))
+EXEC_TARGETS    =   $(addprefix $(INSTALL_DIR)/, $(ASCRIPTS))
+EXECS           =   $(addprefix $(SCRIPTS_DIR)/, $(ASCRIPTS))
 
-install_sscripts: uninstall copy_sources
+#
+# modes :
+#
+default:            install_ascripts clean
 
+install_ascripts:   uninstall copy
+
+install_sscripts:   uninstall copy_sources
+
+#
+# recipes:
+#
 copy_sources: $(SOURCES)
 	test -d $(INSTALL_DIR) \
 		|| mkdir -p $(INSTALL_DIR)
@@ -33,9 +42,12 @@ copy: $(EXECS)
 		|| mkdir -p $(INSTALL_DIR)
 	cp $^ $(INSTALL_DIR)
 
-%: 					%.sh
+%:                  %.sh
 	cp $< $@ && \
 		chmod 755 $@
 
 configure: $(SOURCES)
 	chmod 755 $^
+
+clean:
+	rm -f $(EXECS)
