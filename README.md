@@ -1,17 +1,16 @@
-# SCLE: sensible command line environment
+# SCLE: sanitized command line environment
 
 For the real people and by sensible individuals.
 
 I propose a set from at most only NIX/GNU-friendly programs and at most only
 POSIX shell scripts to interact well with the non bloating tools you could have
 on your system.   It still is good to read the manuals (GNU's documentation is
-astonishing).  Give it some time to reach knowledge above your sensibility).
+astonishing).  Give it some time and reach upper knowledges.
 
-# How ?
+# How To Use ?
 
 `make` would copy all the scripts listed in the Makefile's `SCRIPTS` variable
-in `$HOME/.local/bin` and rename them so they don't have the `.sh` suffix
-anymore.
+in `$HOME/.local/bin` and rename them so they don't keep the `.sh` suffix.
 
 Therefore if `$HOME/.local/bin` is in the `PATH` in your environement
 you could run any of the sensible scripts documented below
@@ -31,6 +30,7 @@ you could run any of the sensible scripts documented below
 # Rocking projects
 
 - [gruvbox][2] and [gruvbox-contrib][3]
+- `alacritty - a cross-platform, gpu-accelerated terminal emulator`
 
 # Sensible Scripts
 
@@ -40,6 +40,7 @@ you could run any of the sensible scripts documented below
 - `path - list what is available in PATH`
 - `fzh - bash history fuzzy search`
 - `b16 - base16 list colorschemes`
+- `alacolors - let me sed alacritty.yml colors for you`
 
 [1]: https://github.com/malikbenkirane/mcee.git
 [2]: https://github.com/morhetz/gruvbox
