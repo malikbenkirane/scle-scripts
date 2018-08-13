@@ -1,13 +1,13 @@
 # SCLE: sanitized command line environment
 
-For the real people and by sensible individuals.
+By sensible people and for the real people.
 
 I propose a set from at most only NIX/GNU-friendly programs and at most only
 POSIX shell scripts to interact well with the non bloating tools you could have
 on your system.   It still is good to read the manuals (GNU's documentation is
 astonishing).  Give it some time and reach upper knowledges.
 
-# How To Use ?
+# usage
 
 `make` would copy all the scripts listed in the Makefile's `SCRIPTS` variable
 in `$HOME/.local/bin` and rename them so they don't keep the `.sh` suffix.
