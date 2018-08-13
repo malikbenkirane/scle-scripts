@@ -25,13 +25,13 @@ To dig deeper see also [terminals-are-sexy (hosted with <3 on github.com)][4]
 
 # toc
 
-1. [scle usage](#scle_usage)
-2. [rocking programs list *and potentially requirements*](#rocking_programs)
+1. [scle usage](#scle-usage)
+2. [rocking programs list *and potentially requirements*](#rocking-programs)
 3. [miscellenaous programs *and potentially requirements too*
-   ](#miscellenaous_programs)
+   ](#miscellenaous-programs)
 4. [rocking projects *that might also be required*
-   ](#rocking_projects)
-5. [scripts index](#scripts_index)
+   ](#rocking-projects)
+5. [scripts index](#scripts-index)
 
 # scle usage
 
@@ -58,7 +58,7 @@ required for your use.
 
 # miscellenaous programs
 
-- `mcee - task master for work ceremonies`, [about mcee][1]
+- `mcee - task master for work ceremonies` (*[about mcee][1]*)
 
 # rocking projects
 
@@ -68,7 +68,7 @@ required for your use.
 # sensible scripts index
 
 - `scls -  screen clear; screen list`
-- `mc - wrapper above mcee`, [about mcee][1]
+- `mc - wrapper above mcee` (*[about mcee][1]*)
 - `fzfc - fc-list fonts family names fuzzy search`
 - `path - list what is available in PATH`
 - `fzh - bash history fuzzy search`
