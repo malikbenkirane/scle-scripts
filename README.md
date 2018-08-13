@@ -31,7 +31,7 @@ To dig deeper see also [terminals-are-sexy (hosted with <3 on github.com)][4]
    ](#miscellenaous-programs)
 4. [rocking projects *that might also be required*
    ](#rocking-projects)
-5. [scripts index](#scripts-index)
+5. [scripts index](#sensible-scripts-index)
 
 # scle usage
 
@@ -56,7 +56,7 @@ In order to use scle scripts above listed programs may be required.
 Thus look at the script header you want to use to determine which ones are
 required for your use.
 
-# miscellenaous programs
+ miscellenaous programs
 
 - `mcee - task master for work ceremonies` (*[about mcee][1]*)
 
